@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/app.css" />
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body>
@@ -18,33 +19,21 @@
       </nav>
       <main class="hero">
         <article class="hero__text">
-          <h1 class="hero__title"></h1>
-          <p class="hero__phrase"></p>
+          <h1 class="hero__title">Maximize skill, minimize budget</h1>
+          <p class="hero__phrase">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
           <button class="hero__get-started get-started-btn">Get Started</button>
         </article>
-        <picture>
-          <source
-            media="(min-width: 1400px)"
-            srcset="./starter-code/assets/image-hero-desktop.png"
-          />
-          <source
-            media="(min-width: 760px)"
-            srcset="./starter-code/assets/image-hero-tablet.png"
-          />
-          <img
-            src="./starter-code/assets/image-hero-mobile.png"
-            alt="a woman is studying with a mug course hours 1,451 members 29K"
-            class="hero__image"
-          />
-        </picture>
       </main>
       <section class="cards">
-        <div class="cards__card card--color">
-          <h2 class="cards__title title--check">
+        <div class="cards__card cards__card--check">
+          <h2 class="cards__sentence--check">
             Check out our most popular courses!
           </h2>
         </div>
-        <div class="cards__card card--animation">
+        <div class="cards__card cards__card--category card--animation">
           <img
             src="./starter-code/assets/icon-animation.svg"
             alt="icon-animation"
@@ -55,9 +44,9 @@
             Learn the latest animation techniques to create stunning motion
             design and captivate your audience.
           </p>
-          <a href="#" class="cards__get-started">Get Started</a>
+          <a href="#" class="cards__get-started get-started-btn">Get Started</a>
         </div>
-        <div class="cards__card card--design">
+        <div class="cards__card cards__card--category card--design">
           <img
             src="./starter-code/assets/icon-design.svg"
             alt="icon-design"
@@ -68,9 +57,9 @@
             Create beautiful, usable interfaces to help shape the future of how
             the web looks.
           </p>
-          <a href="#" class="cards__get-started">Get Started</a>
+          <a href="#" class="cards__get-started get-started-btn">Get Started</a>
         </div>
-        <div class="cards__card card--photography">
+        <div class="cards__card cards__card--category card--photography">
           <img
             src="./starter-code/assets/icon-photography.svg"
             alt="icon-photography"
@@ -81,22 +70,22 @@
             Explore critical fundamentals like lighting, composition, and focus
             to capture exceptional photos.
           </p>
-          <a href="#" class="cards__get-started">Get Started</a>
+          <a href="#" class="cards__get-started get-started-btn">Get Started</a>
         </div>
-        <div class="cards__card card--crypto">
+        <div class="cards__card cards__card--category card--crypto">
           <img
             src="./starter-code/assets/icon-crypto.svg"
             alt="icon-crypto"
             class="cards__icon"
           />
           <h2 class="cards__title title--crypto">crypto</h2>
-          <a href="#" class="cards__get-started">Get Started</a>
+          <p class="cards__phrase phrase--crypto">
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+          <a href="#" class="cards__get-started get-started-btn">Get Started</a>
         </div>
-        <p class="cards__phrase phrase--crypto">
-          All you need to know to get started investing in crypto. Go from
-          beginner to advanced with this 54 hour course.
-        </p>
-        <div class="cards__card card--business">
+        <div class="cards__card cards__card--category card--business">
           <img
             src="./starter-code/assets/icon-business.svg"
             alt="icon-business"
@@ -107,7 +96,7 @@
             A step-by-step playbook to help you start, scale, and sustain your
             business without outside investment.
           </p>
-          <a href="#" class="cards__get-started">Get Started</a>
+          <a href="#" class="cards__get-started get-started-btn">Get Started</a>
         </div>
       </section>
       <footer class="footer-box">
@@ -118,7 +107,7 @@
         />
         <button class="footer__get-started get-started-btn">Get Started</button>
       </footer>
-      <!-- <div class="attribution">
+      <div class="attribution">
         Challenge by
         <a
           class="att-a"
@@ -131,7 +120,7 @@
           href="https://github.com/LeaHaelin/Frontend-Mentor-Challenges"
           >Lea Haelin Kim</a
         >.
-      </div> -->
+      </div>
     </div>
   </body>
 </html>

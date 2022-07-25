@@ -1,0 +1,53 @@
+@import "./_navbar";
+@import "./_hero";
+@import "./_cards";
+@import "./_footer";
+// font
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+// /* font-family: 'Plus Jakarta Sans', sans-serif; */
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    max-width: 375px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    position: relative;
+    background-image: url(/starter-code/assets/image-hero-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 50% 18%;
+    
+}
+
+.get-started-btn:hover{
+    cursor: pointer;
+}
+
+@media(min-width: 768px){
+    .container{
+        max-width: 768px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+        background-image: url(/starter-code/assets/image-hero-tablet.png);
+        background-repeat: no-repeat;
+        background-position: 520% -12.5%;
+    }
+}
+
+@media(min-width:1400px){
+    .container{
+        max-width: 1440px;
+        padding: 0;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+        background-image: url(/starter-code/assets/image-hero-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 190% -20%;
+    }
+}
